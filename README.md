@@ -1,5 +1,7 @@
 # GenAI Playground
 
+Completely unrelated GenAI code examples 
+
 ## Local package installation
 
 Create virtual environment with all package dependencies
