@@ -106,11 +106,12 @@ celerybeat.pid
 .venv
 .aws_cred
 env/
-/quick_start/
+genai/
 venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode/
 
 # mkdocs documentation
 /site
@@ -125,3 +126,7 @@ dmypy.json
 
 */data/
 /logs/
+
+# exclude all .pdf files
+*.pdf
+.vscode/settings.json
