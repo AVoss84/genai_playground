@@ -129,4 +129,3 @@ dmypy.json
 
 # exclude all .pdf files
 *.pdf
-.vscode/settings.json
