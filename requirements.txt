@@ -14,3 +14,6 @@ langchain-ollama==0.2.*
 langchain-experimental==0.3.* 
 neo4j==5.*
 pdfplumber
+chainlit
+pymupdf 
+pillow
