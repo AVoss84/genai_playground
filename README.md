@@ -15,3 +15,15 @@ source genai/bin/activate
 ```bash
 uv pip install -r requirements.txt
 ```
+
+```bash
+streamlit run streamlit_llama32_vision.py
+```
+
+```bash
+streamlit run streamlit_llama32_vision.py
+```
+
+```bash
+chainlit run chainlit_llama32_vision.py -w
+```
