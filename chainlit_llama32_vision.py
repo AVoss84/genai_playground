@@ -1,6 +1,6 @@
 from typing import cast
 import chainlit as cl
-from utils import convert_to_base64, prompt_func, MyOutputParser
+from utils import convert_base64, prompt_func, MyOutputParser
 from pprint import PrettyPrinter
 # from langchain_openai import ChatOpenAI
 # from langchain.prompts import ChatPromptTemplate
@@ -128,7 +128,7 @@ async def on_message(msg: cl.Message):
             query_input["text"] = f"Question: {msg.content}"
         if images:
             with open(images[0].path, "rb") as f:
-                query_input["image"] = convert_to_base64(f.read())
+                query_input["image"] = convert_base64(f.read())
 
         # Call the chain
         response = chain.invoke(query_input)

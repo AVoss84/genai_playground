@@ -16,14 +16,12 @@ source genai/bin/activate
 uv pip install -r requirements.txt
 ```
 
+Run streamlit dashboard 
 ```bash
 streamlit run streamlit_llama32_vision.py
 ```
 
+Run chainlit dashboard for agentic dashboard
 ```bash
-streamlit run streamlit_llama32_vision.py
-```
-
-```bash
-chainlit run chainlit_llama32_vision.py -w
+chainlit run chainlit_llama32_vision.py --host 127.0.0.1 --port 5000 -w
 ```

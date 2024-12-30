@@ -25,21 +25,21 @@ def get_text_from_pdf(pdf_path: str) -> str:
     return text
 
 
-# def convert_to_base64(pil_image):
-#     """
-#     Convert PIL images to Base64 encoded strings
+def convert_to_base64(pil_image: "PIL.Image") -> str:
+    """
+    Convert PIL images to Base64 encoded strings
 
-#     :param pil_image: PIL image
-#     :return: Re-sized Base64 string
-#     """
+    :param pil_image: PIL image
+    :return: Re-sized Base64 string
+    """
 
-#     buffered = BytesIO()
-#     pil_image.save(buffered, format="JPEG")  # You can change the format if needed
-#     img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
-#     return img_str
+    buffered = BytesIO()
+    pil_image.save(buffered, format="JPEG")  # You can change the format if needed
+    img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
+    return img_str
 
 
-def convert_to_base64(file_data):
+def convert_base64(file_data: bytes) -> str:
     """
     Convert binary file data to a base64-encoded string.
     """
