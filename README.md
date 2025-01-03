@@ -13,7 +13,9 @@ source genai/bin/activate
 ```
 
 ```bash
-uv pip install -r requirements.txt
+#uv pip install -r requirements.txt
+# Optional: in case of missing ssl certificates (uv does not pick up pip's config)
+uv pip install -r requirements.txt --no-cache-dir --trusted-host pypi.org --trusted-host files.pythonhosted.org
 ```
 
 Run streamlit dashboard 
